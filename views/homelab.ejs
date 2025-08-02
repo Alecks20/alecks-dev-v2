@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alecks | Home</title>
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <script defer src="https://analytics.alecks.dev/script.js" data-website-id="a1568524-b251-4494-887a-4a83bbaf7845"></script>
+</head>
+<body>
+    <div class="box-1">
+        <%- include('partials/navbar') %>
+
+        <p class="text">My homelab is used to host all my stuff, from websites and game servers to shared cloud desktops.</p>
+
+        <p class="text">All nodes run proxmox ve (clustered).</p>
+
+        <div style="margin-bottom: 35px;"></div>
+        <h3 class="subtitle">🚧 compute nodes</h3>
+        <hr>
+        <table>
+         <thead>
+          <tr>
+            <th>Name</th>
+            <th>CPU</th>
+            <th>RAM</th>
+            <th>Storage</th>
+          </tr>
+         </thead>
+        <tbody>
+          <tr>
+            <td>Railway</td>
+            <td>i5-7400T</td>
+            <td>8GB DDR4</td>
+            <td>256GB NVMe</td>
+          </tr>
+          <tr>
+            <td>Freight</td>
+            <td>i7-4770</td>
+            <td>16GB DDR3</td>
+            <td>500GB SATA</td>
+          </tr>
+        </tbody>
+</table>
+
+
+        <div style="margin-bottom: 35px;"></div>
+     
+        <h3 class="subtitle">🍚 monitoring & backups</h3>
+        <hr>
+        <p class="text"><a class="link-text text" href="https://hetrixtools.com" target="_blank">Hetrixtools</a> is used to monitor uptime, cpu, ram storage and bandwidth usage, <a class="link-text text" href="https://ntfy.sh" target="_blank">ntfy</a> is used for real-time push notifications about incidents.</p>
+        <p class="text">Encrypted backups of server disks are sent to <a class="link-text text" href="https://backblaze.com" target="_blank">Backblaze</a>.</p>
+    </div>
+</body>
+</html>

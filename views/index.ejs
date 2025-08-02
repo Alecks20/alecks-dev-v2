@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alecks | Home</title>
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <script defer src="https://analytics.alecks.dev/script.js" data-website-id="a1568524-b251-4494-887a-4a83bbaf7845"></script>
+</head>
+<body>
+    <div class="box-1">
+        <%- include('partials/navbar') %>
+
+        <p class="text">Hello internet, my name is Alecks. I’m a hobbyist (& self-taught) developer from Australia with a passion for computers, programming, homelabbing and system administration.</p>
+        <p class="text">I use this website to showcase my exerience with different technologies, blog about things I've learned like server security, the process of building my home server (coming soon) and display my digital garden.</p>
+
+        <div style="margin-bottom: 35px;"></div>
+        <h3 class="subtitle">✏️ latest blog posts</h3>
+        <hr>
+
+      <div>
+       <% posts.forEach(post => { %>
+         <p class="text"><b><a class="text link-text" href="/post/<%= post.slug %>"><%- post.title %></a></b> - <%- post.description %></p>
+       <% }) %>
+      </div>
+
+        <div style="margin-bottom: 35px;"></div>
+     
+        <h3 class="subtitle">🍚 public resources</h3>
+        <hr>
+        <p class="text"><a class="link-text text" href="https://status.alecks.cloud" target="_blank">Cloud Status</a> - past uptime and current status of my cloud.</p>
+    </div>
+</body>
+</html>
