@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(31, 30, 30);
     font: calc(0.40rem + 1vmin) monospace;
 }
 
@@ -17,7 +17,7 @@ body {
 .subtitle {
     color: rgb(175, 169, 169);
     margin-top: 2px;
-    font-size: 16px;
+    font-size: 18px;
     margin-left: 5px;
 }
 
@@ -41,7 +41,7 @@ body {
 
 .box-1 {
     margin: 0 auto;
-    width: 700px;
+    width: 650px;
     padding-top: 50px;
 }
 
@@ -70,6 +70,7 @@ table {
   border-collapse: collapse;
   width: 100%;
     color: rgb(175, 169, 169);
+  font-size: 18px;
 }
 
 th, td {
@@ -80,4 +81,8 @@ th, td {
 
 thead {
   background-color: rgb(53, 51, 51);
+}
+
+.text table {
+    font-size: 18px;
 }
