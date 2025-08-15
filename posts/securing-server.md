@@ -12,7 +12,7 @@ description: "SSH keys, configuration updates and NTFY login notifications."
 ---
 
 ### Non-root account for logins / Disable root login.
-Disabling the ability to login as root helps with many automated bots that brute-force ssh into your server, start by making a new user with any username you wants
+Disabling the ability to login as root helps with many automated bots that brute-force ssh into your server, start by making a new user with any username you want.
 
 ```
 adduser kuma
