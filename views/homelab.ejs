@@ -11,12 +11,12 @@
     <div class="box-1">
         <%- include('partials/navbar') %>
 
-        <p class="text">My homelab is used to host all my stuff, from websites and game servers to shared cloud desktops.</p>
+        <p class="text">My homelab is used to host all my stuff, mainly websites, game servers and other small vms.</p>
 
         <p class="text">Bare metal machines run Proxmox VE (clustered).</p>
 
         <div style="margin-bottom: 35px;"></div>
-        <h3 class="subtitle">🚂 Compute Nodes</h3>
+        <h3 class="subtitle">🍘 Compute Nodes</h3>
         <hr>
         <table>
          <thead>
@@ -29,16 +29,16 @@
          </thead>
         <tbody>
           <tr>
-            <td>Railway</td>
-            <td>i5-7400T</td>
-            <td>8GB DDR4</td>
-            <td>256GB NVMe</td>
+            <td>Lightsail</td>
+            <td>AMD Ryzen 5 5500</td>
+            <td>32GB DDR4</td>
+            <td>1TB NVMe</td>
           </tr>
           <tr>
-            <td>Freight</td>
-            <td>i7-4770</td>
-            <td>16GB DDR3</td>
-            <td>500GB SATA</td>
+            <td>Railway</td>
+            <td>Intel Core i5-7400T</td>
+            <td>8GB DDR4</td>
+            <td>256GB NVMe</td>
           </tr>
         </tbody>
 </table>
@@ -46,10 +46,17 @@
 
         <div style="margin-bottom: 35px;"></div>
      
-        <h3 class="subtitle">🛟 Monitoring & Backups</h3>
+        <h3 class="subtitle">💾 Monitoring & Backups</h3>
         <hr>
         <p class="text"><a class="link-text text" href="https://hetrixtools.com" target="_blank">Hetrixtools</a> is used to monitor uptime, cpu, ram storage and bandwidth usage, <a class="link-text text" href="https://ntfy.sh" target="_blank">ntfy</a> is used for real-time push notifications about incidents.</p>
         <p class="text">Encrypted backups of server disks are sent to <a class="link-text text" href="https://backblaze.com" target="_blank">Backblaze</a>.</p>
+
+        <div style="margin-bottom: 35px;"></div>
+        <h3 class="subtitle">🚠 Networking Setup</h3>
+        <hr>
+        <p class="text">Servers are hooked up via a gigabit fiber uplink, protected with <a class="link-text text" href="https://globalsecurelayer.com/ddos-protection" target="_blank">gsl</a>. Running enterprise grade networking gear onsite.</p>
+
+  
     </div>
 </body>
 </html>
